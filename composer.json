@@ -1,0 +1,59 @@
+{
+    "name": "tyhpdef/doctrine-migrations-impl",
+    "description": "Implementation package for tyhpdef/doctrine-migrations. Require tyhpdef/doctrine-migrations, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.9.7.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/doctrine-dbal": "@dev",
+                "tyhpdef/doctrine-event-manager": "@dev",
+                "tyhpdef/psr-log": "@dev",
+                "tyhpdef/psr-cache": "@dev",
+                "tyhpdef/php-ext-mysqli": "@dev",
+                "tyhpdef/php-ext-pdo": "@dev",
+                "tyhpdef/php-ext-pgsql": "@dev",
+                "tyhpdef/php-ext-sqlite3": "@dev",
+                "tyhpdef/php-ext-bcmath": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/doctrine-migrations"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "doctrine/migrations": "3.9.7"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/doctrine-dbal": "@dev",
+        "tyhpdef/doctrine-event-manager": "@dev",
+        "tyhpdef/psr-log": "@dev",
+        "tyhpdef/psr-cache": "@dev",
+        "tyhpdef/php-ext-mysqli": "@dev",
+        "tyhpdef/php-ext-pdo": "@dev",
+        "tyhpdef/php-ext-pgsql": "@dev",
+        "tyhpdef/php-ext-sqlite3": "@dev",
+        "tyhpdef/php-ext-bcmath": "@dev"
+    }
+}
